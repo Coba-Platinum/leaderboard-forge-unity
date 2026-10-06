@@ -63,7 +63,7 @@
  1. Open your Unity project and select **Window \> Package Manager**.
 2. Click the **+** icon in the top-left corner.
 3. Select **Add package from git URL...**
-4. Enter your repository URL.
+4. Enter this repository URL (https://github.com/Coba-Platinum/leaderboard-forge-unity.git).
 5. Click **Add**.
 
  ## Method B: Manual Project Injection
