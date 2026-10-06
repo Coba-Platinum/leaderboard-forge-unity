@@ -11,12 +11,6 @@ namespace CobaPatinum.LeaderboardForge
         public string Metadata;
         public int Rank;
         [SerializeField] internal string UniqueID;
-        [field: System.NonSerialized] internal string NewUsername { get; set; }
-
-        /// <summary>
-        /// Returns whether the entry is the current user's entry.
-        /// </summary>
-        //public bool IsMine() => UniqueID == LeaderboardCreator.UserGuid;
 
         /// <summary>
         /// Returns the rank of the entry with its suffix.
