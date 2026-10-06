@@ -1,0 +1,12 @@
+{
+  "name": "com.cobaplatinum.leaderboardforge",
+  "displayName": "Coba Platinum Leaderboard Forge",
+  "version": "1.3.0",
+  "unity": "2022.3",
+  "description": "A package for implementing and interfacing with Coba Platinum Leaderboards in Unity.",
+  "keywords": [],
+  "author": {
+    "name": "Coba Platinum",
+    "url": "https://www.cobaplatinum.com"
+  }
+}
