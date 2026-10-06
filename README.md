@@ -54,7 +54,7 @@
 
  ## 6\. Evasion-Resistant Soft Censorship
 
- Integrates an obscenity string-processing library that detects zero-width characters, punctuation shielding, and common leetspeak bypasses. Processing occurs server-side maintain low response latency.
+ Integrates an obscenity string-processing library that detects zero-width characters, punctuation shielding, and common leetspeak bypasses. Processing occurs server-side to maintain low response latency.
 
  # Installation
 
