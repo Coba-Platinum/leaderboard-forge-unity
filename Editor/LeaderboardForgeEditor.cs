@@ -330,7 +330,7 @@ namespace CobaPlatinum.LeaderboardForge
                     try
                     {
                         ConnectionResponse response = JsonUtility.FromJson<ConnectionResponse>(request.downloadHandler.text);
-                        var scopesList = new System.Collections.Generic.List<string>(response.authorizedScopes);
+                        var scopesList = new List<string>(response.activeScopes);
 
                         // Check if the user has leaderboard permissions
                         if (!scopesList.Contains("leaderboards"))
@@ -344,7 +344,7 @@ namespace CobaPlatinum.LeaderboardForge
                         else
                         {
                             // Connection fully operational with required permissions
-                            string scopesDisplay = string.Join(", ", response.authorizedScopes);
+                            string scopesDisplay = string.Join(", ", response.activeScopes);
                             EditorUtility.DisplayDialog("Connection Verified",
                                 $"{response.message}\n\nUnlocked Features: [{scopesDisplay}]", "Hooray!");
 
@@ -774,7 +774,8 @@ namespace CobaPlatinum.LeaderboardForge
         {
             public bool success;
             public string message;
-            public string[] authorizedScopes;
+            public string developerId;
+            public string[] activeScopes;
         }
 
         [Serializable]
